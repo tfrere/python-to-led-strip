@@ -11,7 +11,7 @@ This repository is a part from the [**music to led project**](https://github.com
 
 It's a tool that allows you to **send led strip frames** to an **arduino device** using **python**.
 
-![device](./images/device.jpg)
+![arduino-case](./images/arduino-case.png)
 
 ## 1. Electronic scheme
 
@@ -28,9 +28,7 @@ It's a tool that allows you to **send led strip frames** to an **arduino device*
 
 The code can be found [here](./arduino/serial-case/serial-case.ino).
 
-To upload it, you will need the NeoPixelBus ligrary.
-
-[Download Here](https://github.com/Makuna/NeoPixelBus) or using library manager, search for "NeoPixelBus".
+To upload it, you will need the NeoPixelBus ligrary. You can [download it here](https://github.com/Makuna/NeoPixelBus) or using library manager, search for "NeoPixelBus".
 
 ## 3. Python part
 
@@ -50,8 +48,7 @@ activate visualization-env
 Install dependencies using pip and the conda package manager
 
 ```
-conda install numpy scipy pyqtgraph
-pip install pyaudio
+conda install numpy
 ```
 
 ### Installing dependencies without Anaconda
@@ -68,19 +65,23 @@ If `pip` is not found try using `python -m pip install` instead.
 
 Once the wiring is finished and your code uploaded, you can test it following these simple steps :
 
-- 1. Connect the arduino to your computer through usb cable
-- 2. run **python serial.py --list-devices** and find the corresponding usb name
-- 3. run **python serial.py --test-serial-device "YOUR CORRESPONDING USB NAME"**
+- Connect the arduino to your computer through usb cable
+- run **python serial.py --list-devices** and find the corresponding usb name
+- run **python serial.py --test-serial-device "YOUR CORRESPONDING USB NAME"**
 
 ## 5. Make the 3d printed case
 
-![arduino-case](./images/arduino-case.png)
+All the 3d parts can be found in the 3d-parts folder.
 
 ### Slicer settings
 
 - Supports **No**
 - Resolution **0.2**
 - Infill **30-100%**
+
+## 6. The end
+
+You're good to go !
 
 ## Misc
 
