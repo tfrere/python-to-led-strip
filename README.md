@@ -7,7 +7,8 @@
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
 
-This repository is a part of the music to led project. It provides a tool that helps you to send led strip frames to an arduino device using python.
+This repository is a part of the music to led project.
+It provides a tool that allows you to send led strip frames to an arduino device using python.
 
 ![device](./images/device.jpg)
 
@@ -40,6 +41,8 @@ Once the wiring is finished and your code uploaded, you can test it following th
 - Resolution **0.2**
 - Infill **30-100%**
 
+## Misc
+
 ### Led number limitation
 
 It depends on two factors :
@@ -49,7 +52,7 @@ It depends on two factors :
 
 For now and using the nano case, please consider not using more than 254 leds.
 
-## Calculating led power consumtion
+### Calculating led power consumtion
 
 Each individual NeoPixel draws up to 60 milliamps at maximum brightness white (red + green + blue).
 
@@ -59,7 +62,9 @@ Each individual NeoPixel draws up to 60 milliamps at maximum brightness white (r
 - 300 NeoPixels × 60 mA ÷ 1,000 = 18 Amps minimum
 - 300 NeoPixels × 60 mA ÷ 1,000 / 2 (for each led to 125,125,125) = 9 Amps minimum
 
-## In some cases you will have to install USB drivers on OSX
+### OSX
+
+Sometimes, the arduino nano is no recognized by OSX natively and you will have to install specific usb drivers to make it work.
 
 brew tap adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver
 brew cask install wch-ch34x-usb-serial-driver
