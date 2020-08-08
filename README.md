@@ -2,7 +2,7 @@
 
 <p align="left">
 <a href="https://github.com/tfrere/python-to-led-strip#licence"><img src="https://img.shields.io/badge/licence-MIT-green" alt="Licence"></a>
-<a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/badge/platform-osx--64%20%7C%20linux--64-lightgrey" alt="Platform support"></a>
+<a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/badge/platform-osx--64%20%7C%20linux--64%20%7C%20windows--64-lightgrey" alt="Platform support"></a>
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/last-commit/tfrere/python-to-led-strip" alt="Last update"></a>
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
@@ -115,6 +115,7 @@ brew cask install wch-ch34x-usb-serial-driver
 
 - Update the protocol
 - Upgrade maximum led number
+- Make an error proof protocol
 - Bluetooth case
 
 ## Licence
