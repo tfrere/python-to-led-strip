@@ -1,4 +1,4 @@
-# A part from the [music to led project](https://github.com/tfrere/python-to-led-strip)
+# Python to led strip
 
 <p align="left">
 <a href="https://github.com/tfrere/python-to-led-strip#licence"><img src="https://img.shields.io/badge/licence-MIT-green" alt="Licence"></a>
@@ -7,14 +7,15 @@
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
 
-This repository is a part of the music to led project.
+This repository is a part from the [music to led project](https://github.com/tfrere/python-to-led-strip).
+
 It provides a tool that allows you to send led strip frames to an arduino device using python.
 
 ![device](./images/device.jpg)
 
 ## 1. Electronic scheme
 
-![electronic-scheme](images/simple-electronic-scheme.png)
+![electronic-scheme](./images/electronic-scheme.png)
 
 ### Component list
 
@@ -68,3 +69,17 @@ Sometimes, the arduino nano is no recognized by OSX natively and you will have t
 
 brew tap adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver
 brew cask install wch-ch34x-usb-serial-driver
+
+## Roadmap
+
+- Update the protocol
+- Upgrade maximum led number
+- Bluetooth case
+
+## Licence
+
+This project was developed by Thibaud FRERE on MIT Licence.
+
+## Contribute
+
+If you encounter any problems running program, please open a new issue. Also, please consider opening an issue if you have any questions or suggestions for improving the installation process.
