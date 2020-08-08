@@ -28,7 +28,7 @@ It's a tool that allows you to **send led strip frames** to an **arduino device*
 
 The code can be found [here](./arduino/serial-case/serial-case.ino).
 
-To upload it, you will need the NeoPixelBus ligrary. You can [download it here](https://github.com/Makuna/NeoPixelBus) or using library manager, search for "NeoPixelBus".
+To upload it, you will need the NeoPixelBus library. You can [download it here](https://github.com/Makuna/NeoPixelBus) or using library manager, search for "NeoPixelBus".
 
 ## 3. Python part
 

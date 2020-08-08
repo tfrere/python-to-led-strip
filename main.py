@@ -82,7 +82,7 @@ class Serial:
     def testDevice(name):
         Serial.tryPort(name)
 
-        number_of_pixels = 60
+        number_of_pixels = 80
         serialOutputs = []
 
         pixels = np.tile(1, (3, number_of_pixels))
@@ -92,11 +92,12 @@ class Serial:
         pixels[2, 2] = 125  # Set 3rd pixel blue
 
         serialClass = Serial(True, 0.016, number_of_pixels, name)
+        print("Testing serial device -> ", name)
 
         while True:
             pixels = np.roll(pixels, 1, axis=1)
             serialClass.update(pixels)
-            print(serialClass.isOnline())
+            print("Is serial online -> ", serialClass.isOnline())
             time.sleep(.016)
 
     def isOnline(self):
