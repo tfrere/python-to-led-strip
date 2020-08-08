@@ -7,9 +7,9 @@
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
 
-This repository is a part from the [music to led project](https://github.com/tfrere/python-to-led-strip).
+This repository is a part from the [**music to led project**](https://github.com/tfrere/python-to-led-strip).
 
-It provides a tool that allows you to send led strip frames to an arduino device using python.
+It's a tool that allows you to **send led strip frames** to an **arduino device** using **python**.
 
 ![device](./images/device.jpg)
 
@@ -24,15 +24,55 @@ It provides a tool that allows you to send led strip frames to an arduino device
 - 1x **1000mu Capacitor** ( optional )
 - 1x **Led strip female connector**
 
-## 2. Test your device
+## 2. Arduino part
+
+The code can be found [here](./arduino/serial-case/serial-case.ino).
+
+To upload it, you will need the NeoPixelBus ligrary.
+
+[Download Here](https://github.com/Makuna/NeoPixelBus) or using library manager, search for "NeoPixelBus".
+
+## 3. Python part
+
+Visualization code is compatible with Python 2.7 or 3.5. It will also require a numpy installation.
+
+On Windows machines, the use of [Anaconda](https://www.anaconda.com/distribution/) is **highly recommended**. Anaconda simplifies the installation of Python dependencies, which is sometimes difficult on Windows.
+
+### Installing dependencies with Anaconda
+
+Create a [conda virtual environment](http://conda.pydata.org/docs/using/envs.html) (this step is optional but recommended)
+
+```
+conda create --name visualization-env python=3.5
+activate visualization-env
+```
+
+Install dependencies using pip and the conda package manager
+
+```
+conda install numpy scipy pyqtgraph
+pip install pyaudio
+```
+
+### Installing dependencies without Anaconda
+
+The pip package manager can also be used to install the python dependencies.
+
+```
+pip install numpy
+```
+
+If `pip` is not found try using `python -m pip install` instead.
+
+## 4. Test your device
 
 Once the wiring is finished and your code uploaded, you can test it following these simple steps :
 
 - 1. Connect the arduino to your computer through usb cable
-- 2. run ./audio-2-led --list-devices and find the corresponding usb name
-- 3. run ./audio-2-led --test-serial-device "YOUR CORRESPONDING USB NAME"
+- 2. run **python serial.py --list-devices** and find the corresponding usb name
+- 3. run **python serial.py --test-serial-device "YOUR CORRESPONDING USB NAME"**
 
-## 3. Make the 3d printed case
+## 5. Make the 3d printed case
 
 ![arduino-case](./images/arduino-case.png)
 
