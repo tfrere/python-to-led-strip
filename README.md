@@ -1,26 +1,28 @@
-<p align="center">
-  <a href="https://github.com/tfrere/python-to-led-strip" title="haxe.org"><img src="images/logo.svg" width="400"></a>
-</p>
-<p align="center">
+# A part from the [music to led project](https://github.com/tfrere/python-to-led-strip)
+
+<p align="left">
 <a href="https://github.com/tfrere/python-to-led-strip#licence"><img src="https://img.shields.io/badge/licence-MIT-green" alt="Licence"></a>
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/badge/platform-osx--64%20%7C%20linux--64-lightgrey" alt="Platform support"></a>
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/last-commit/tfrere/python-to-led-strip" alt="Last update"></a>
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
 
-# A part from the [music to led project](https://github.com/tfrere/python-to-led-strip)
+This repository is a part of the music to led project. It provides a tool that helps you to send led strip frames to an arduino device using python.
 
-## Arduino part
+![device](./images/device.jpg)
 
-In addition of the software, you need to create an arduino "serial to led" device.
-
-As each led project has very specific needs, i kept this part as simple as possible.
-
-Arduino code can be found [here](arduino/serial-case/serial-case.ino).
-
-PS : For now, please consider not using more than 254 leds by arduino.
+## 1. Electronic scheme
 
 ![electronic-scheme](images/simple-electronic-scheme.png)
+
+### Component list
+
+- 1x **Alim 5V 10A**
+- 1x **Arduino nano or other**
+- 1x **1000mu Capacitor** ( optional )
+- 1x **Led strip female connector**
+
+## 2. Test your device
 
 Once the wiring is finished and your code uploaded, you can test it following these simple steps :
 
@@ -28,43 +30,15 @@ Once the wiring is finished and your code uploaded, you can test it following th
 - 2. run ./audio-2-led --list-devices and find the corresponding usb name
 - 3. run ./audio-2-led --test-serial-device "YOUR CORRESPONDING USB NAME"
 
-### Advanced arduino device
+## 3. Make the 3d printed case
 
-If you need a complete packaged product, there is a more advanced version available in the [Arduino folder](/arduino/).
+![arduino-case](./images/arduino-case.png)
 
-You will find :
-
-- OBJ of 3d printed arduino cases
-- Complete electronic scheme
-- Device assembly and code upload tutorial
-
-# Arduino part
-
-![device](../images/device.jpg)
-
-### Component list
-
-- 1x [**Alim 5V 10A**](https://www.amazon.fr/gp/product/B06XCMQ212/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) _~25\$_
-- 1x **Arduino nano or other** _~5\$_
-- 1x **1000mu Capacitor** _~1\$_
-- 1x [**Led strip female connector**](https://www.amazon.fr/BTF-LIGHTING-Connectors-WS2812B-WS2811-20pairs/dp/B01DC0KIT2) _~5\$_
-- 1x **Led strip WS2812B** _~35\$_
-
-**Estimated cost** _~75\$_
-
-### Electronic scheme
-
-![electronic-scheme](./images/electronic-scheme.png)
-
-### 3d printed case
-
-Slicer settings
+### Slicer settings
 
 - Supports **No**
 - Resolution **0.2**
 - Infill **30-100%**
-
-![arduino-case](./images/arduino-case.png)
 
 ### Led number limitation
 
