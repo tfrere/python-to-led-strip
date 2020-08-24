@@ -76,7 +76,7 @@ void loop()
       leds.show();
 
       // Tell the controller we're ready
-      // We don't want to be receiving serial data during leds.show() because data will be dropped
+      // We don't want to receive serial data during leds.show() because data will be dropped
       Serial.write(0x00);
       break;
 

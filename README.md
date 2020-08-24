@@ -7,7 +7,7 @@
 <a href="https://github.com/tfrere/python-to-led-strip"><img src="https://img.shields.io/github/v/tag/tfrere/python-to-led-strip" alt="Current version"></a>
 </p>
 
-This repository is a part from the [**music to led project**](https://github.com/tfrere/python-to-led-strip).
+This repository is a part from the [**music to led project**](https://github.com/tfrere/music-to-led).
 
 It's a tool that allows you to **send led strip frames** to an **arduino device** using **python**.
 

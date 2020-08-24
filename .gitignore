@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 
 .DS_STORE
+
+# py2app
+/dist
+/build
