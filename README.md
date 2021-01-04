@@ -117,6 +117,7 @@ brew cask install wch-ch34x-usb-serial-driver
 - Upgrade maximum led number
 - Make an error proof protocol
 - Bluetooth case
+- WS2813, WS2812B, WS2812, and WS2811 LED lights
 
 ## Licence
 
