@@ -1,8 +1,7 @@
 __pycache__/
 *.py[cod]
-
+*.spec
 .DS_STORE
 
-# py2app
 /dist
 /build
