@@ -5,8 +5,9 @@ import glob
 import time
 import numpy as np
 
-# perfomance improvements : try to understand why a non connected device is increasing CPU needs to 50%
+# V1.0.0-alpha
 
+# perfomance improvements : try to understand why a non connected device is increasing CPU needs to 50%
 
 class Serial:
     """ 

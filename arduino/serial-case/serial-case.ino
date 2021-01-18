@@ -24,13 +24,7 @@
 
 #include <Adafruit_NeoPixel.h> 
 
-#define BLUETOOTH_MODE false
-
-#if defined(ARDUINO_AVR_NANO)
   #define DATAPIN 4
-#else
-  #define DATAPIN D4
-#endif
 
 #define PIXELS 500
 
